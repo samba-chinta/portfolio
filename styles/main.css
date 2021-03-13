@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body
+{
+    padding: 0;
+    margin: 5px;
+}
+
+.navbar
+{
+    font-family: poppins, sans-serif, serif, arial;
+    font-size: 1em;
+}
+
+.navbar .navbar-toggler
+{
+    outline: none;
+    border: none;
+}
+
+.navbar .container-fluid .navbar-brand
+{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 0 0 20px;
+    
+}
+
+.navbar .container-fluid .navbar-nav .nav-link
+{
+    color: #263238;
+    padding: 5px 30px 5px 20px;
+}
+
+.navbar .container-fluid .navbar-nav .nav-link:hover
+{
+    color: #00f;
+}
+
+#about
+{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+    font-family: poppins, sans-serif, serif;
+    /* background: linear-gradient(120deg, blue, skyblue); */
+    background-image: url('/assests/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #263238;
+    background-blend-mode: difference;
+}
+
+#about h1 
+{
+    color: #fff;
+}
+
+#about p
+{
+    color: #263238;
+    font-size: 1em;
+}
+
+#about .social-media a
+{
+    padding: 5px;
+    font-size: 1em;
+}
+
+#skills
+{
+    font-family: poppins,sans-serif,serif;
+    margin: 20px auto;
+}
+
+#skills h2, #projects h2, #contact h2
+{
+    color:#2962ff;
+    margin: 10px auto;
+}
+
+#skills .row,  #projects .row
+{
+    margin: 30px auto;
+}
+
+#skills .row div
+{
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+#skills .row div img
+{
+    width: 70px;
+    height: 70px;
+    margin: 0 0 5px 0;
+}
+
+#projects .row div
+{
+    margin: 40px auto;
+}
+
+#projects .row div button
+{
+    margin: 10px auto 20px;
+}
+
+#contact
+{
+    margin: 50px auto 0;
+}
+
+#contact .row
+{
+    background: linear-gradient(120deg,#e1bee7,skyblue);
+    font-family: poppins, serif, sans-serif;
+}
+
+#contact .row .contact-info, #contact .row .address-info
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    /* color:#fff; */
+    padding: 10px auto;
+    margin: 25px auto;
+}
+
+#contact .row .contact-info a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+#contact .row .message-form
+{
+    margin: 25px auto;
+    padding: 10px auto;
+    /* color: #fff; */
+}
+
+.message-form input
+{
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 65%;
+    margin: 10px 5px;
+}
+
+.message-form input[type="text"]
+{
+    background: none;
+    border-bottom: solid 1px #000;
+    /* color: #fff; */
+}
+
+.message-form input[type="text"]::placeholder
+{
+    /* color: #fff; */
+    color: #000;
+    text-align: center;
+}
+
+.preview
+{
+    text-decoration: none;
+    color:#fff;
+}
