@@ -174,3 +174,13 @@ p
     text-decoration: none;
     color:#fff;
 }
+
+.arrow-up-btn
+{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    font-size: 26px;
+    color: #000;
+    text-decoration: none;
+}
