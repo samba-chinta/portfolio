@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 body
 {
     padding: 0;
@@ -24,7 +26,14 @@ body
     font-weight: bold;
     letter-spacing: 1px;
     padding: 0 0 0 20px;
-    
+    font-family: poppins;
+}
+
+.navbar .container-fluid .navbar-header img
+{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
 }
 
 .navbar .container-fluid .navbar-nav .nav-link
@@ -43,7 +52,7 @@ body
     height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: column;
     margin: 10px auto;
     font-family: poppins, sans-serif, serif;
@@ -53,6 +62,7 @@ body
     background-size: cover;
     background-color: #263238;
     background-blend-mode: difference;
+    /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); */
 }
 
 #about h1 
@@ -74,14 +84,26 @@ p
 
 #skills
 {
+    /* background-color: aliceblue; */
+    /* clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%); */
     font-family: poppins,sans-serif,serif;
-    margin: 20px auto;
+    padding: 10px;
+    margin: 20px auto 20px;
 }
 
-#skills h2, #projects h2, #contact h2
+#skills h2
 {
-    color:#2962ff;
-    margin: 10px auto;
+    color:#000;
+    display: flex;
+    justify-content: flex-start;
+    font-family: poppins;
+}
+
+#skills h2::before
+{
+    content: '|';
+    color: blue;
+    margin: 0 5px;
 }
 
 #skills .row,  #projects .row
@@ -100,6 +122,21 @@ p
     width: 70px;
     height: 70px;
     margin: 0 0 5px 0;
+}
+
+#projects h2
+{
+    color:#000;
+    display: flex;
+    align-self: flex-end;
+    font-family:  poppins;
+}
+
+#projects h2::before
+{
+    content: '|';
+    color: blue;
+    margin: 0 5px;
 }
 
 #projects .row div
