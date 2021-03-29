@@ -47,6 +47,12 @@ body
     color: #00f;
 }
 
+.navbar .collapse ul
+{
+    padding: 20px;
+
+}
+
 #about
 {
     height: 500px;
@@ -89,6 +95,8 @@ p
     font-family: poppins,sans-serif,serif;
     padding: 10px;
     margin: 20px auto 20px;
+    line-height: 25px;
+
 }
 
 #skills h2
@@ -115,6 +123,8 @@ p
 {
     font-size: 1em;
     margin: 20px 0;
+    padding: 40px;
+    line-height: 30px;
 }
 
 #skills .row div img
@@ -152,15 +162,17 @@ p
 #contact
 {
     margin: 50px auto 0;
+    background: linear-gradient(120deg,#000428,#004e92);
+    text-align: center;
+    color: #fff;
 }
 
 #contact .row
 {
-    background: linear-gradient(120deg,#e1bee7,skyblue);
     font-family: poppins, serif, sans-serif;
 }
 
-#contact .row .contact-info, #contact .row .address-info
+#contact .row .contact-info
 {
     display: flex;
     flex-direction: column;
@@ -173,14 +185,14 @@ p
 #contact .row .contact-info a
 {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 #contact .row .message-form
 {
     margin: 25px auto;
     padding: 10px auto;
-    /* color: #fff; */
+    color: #fff; 
 }
 
 .message-form input
@@ -188,21 +200,31 @@ p
     outline: none;
     border: none;
     padding: 5px;
-    width: 65%;
+    width: 50%;
     margin: 10px 5px;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+@media all and (max-width:800px)
+{
+    .message-form input
+    {
+        width: 90%;
+    }
 }
 
 .message-form input[type="text"]
 {
     background: none;
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px #fff;
     /* color: #fff; */
 }
 
 .message-form input[type="text"]::placeholder
 {
-    /* color: #fff; */
-    color: #000;
+    color: #fff; 
     text-align: center;
 }
 
